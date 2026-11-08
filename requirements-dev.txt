@@ -1,0 +1,9 @@
+-r requirements.txt
+
+# Qualidade e segurança
+pytest==9.2.0
+responses==0.26.3
+ruff==0.17.4
+bandit[toml]==1.9.4
+pip-audit==2.10.1
+pre-commit==4.7.0

@@ -1,0 +1,31 @@
+# --- Segredos (NUNCA versionar) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Estado local ---
+data/*
+!data/.gitkeep
+*.db
+*.sqlite3
+config/watchlist.yaml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# --- Ferramentas ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/

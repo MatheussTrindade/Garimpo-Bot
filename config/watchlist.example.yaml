@@ -1,0 +1,22 @@
+# Copie para `config/watchlist.yaml` e ajuste à stack que você monitora.
+# O bot só alerta sobre itens que casem com esta lista (exceto `alert_all_kev`).
+
+alert_all_kev: true        # todo item novo no CISA KEV vira alerta, mesmo fora da watchlist
+
+thresholds:
+  min_cvss: 7.0
+  min_epss: 0.10
+
+vendors:
+  - name: fortinet
+    products: [fortios, fortigate, forticlient]
+  - name: microsoft
+    products: [windows, exchange_server, sharepoint_server]
+  - name: apache
+    products: [http_server, tomcat]
+  - name: cisco
+    products: []           # lista vazia = qualquer produto do vendor
+
+ecosystems:                # GitHub Security Advisories (fase 2)
+  - pip
+  - npm

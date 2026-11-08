@@ -1,0 +1,1 @@
+"""Fixtures compartilhadas do pytest."""
