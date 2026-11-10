@@ -8,7 +8,7 @@
 
 ## Como reportar uma vulnerabilidade
 
-**Não abra issue pública.** Use o [reporte privado do GitHub](https://github.com/MatheussTrindade/Garimpo-Bot/security/advisories/new).
+**Não abra issue pública.** Use o [reporte privado do GitHub](https://github.com/MatheussTrindade/Atalaia/security/advisories/new).
 
 Inclua, se possível:
 - Descrição e impacto

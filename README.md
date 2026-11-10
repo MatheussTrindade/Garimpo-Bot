@@ -1,10 +1,12 @@
 <div align="center">
 
-# ⛏️ Garimpo Bot
+# 🗼 Atalaia
 
-**Garimpa vulnerabilidades e ameaças nas fontes oficiais e entrega só o que importa — priorizado — no Telegram.**
+**Vulnerability & Threat Intelligence Alerts**
 
-[![CI](https://github.com/MatheussTrindade/Garimpo-Bot/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheussTrindade/Garimpo-Bot/actions/workflows/ci.yml)
+Vigia as fontes oficiais de Threat Intel e dá o alarme no Telegram só quando importa — priorizado por risco real.
+
+[![CI](https://github.com/MatheussTrindade/Atalaia/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheussTrindade/Atalaia/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![Ruff](https://img.shields.io/badge/lint-ruff-D7FF64?logo=ruff&logoColor=black)
 ![Bandit](https://img.shields.io/badge/SAST-bandit-yellow)
@@ -28,8 +30,8 @@ explorada**. O resultado é fadiga de alertas: o que é crítico se perde no mei
 
 ### A ideia
 
-Fazer o **garimpo**: peneirar as fontes oficiais de Threat Intel e entregar no Telegram
-apenas o que:
+Ser a **atalaia** — a torre de vigia que observa o horizonte e dá o alarme antes do ataque.
+O bot monitora as fontes oficiais de Threat Intel e só alerta no Telegram sobre o que:
 
 1. **Afeta a minha stack** → casa com a *watchlist* (vendors, produtos, ecossistemas);
 2. **Tem chance real de ser explorado** → está no **CISA KEV** ou tem **EPSS** alto;
@@ -102,7 +104,7 @@ Detalhes em [docs/architecture.md](docs/architecture.md) · Fontes em [docs/data
 ## 📁 Estrutura
 
 ```text
-Garimpo-Bot/
+Atalaia/
 ├── app/
 │   ├── __main__.py              # python -m app
 │   ├── main.py                  # entrypoint e agendamento
@@ -170,8 +172,8 @@ Garimpo-Bot/
 **Pré-requisitos:** Python 3.12+ e um bot criado no [@BotFather](https://t.me/BotFather).
 
 ```bash
-git clone https://github.com/MatheussTrindade/Garimpo-Bot.git
-cd Garimpo-Bot
+git clone https://github.com/MatheussTrindade/Atalaia.git
+cd Atalaia
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -188,8 +190,8 @@ python -m app
 **Com Docker:**
 
 ```bash
-docker build -t garimpo-bot .
-docker run --env-file .env -v ./data:/app/data -v ./config:/app/config garimpo-bot
+docker build -t atalaia .
+docker run --env-file .env -v ./data:/app/data -v ./config:/app/config atalaia
 ```
 
 ### Variáveis de ambiente
@@ -259,6 +261,6 @@ Distribuído sob a licença [MIT](LICENSE).
 
 <div align="center">
 
-Feito por **[Matheus Trindade](https://github.com/MatheussTrindade)** · ⛏️ *garimpando sinal no meio do ruído*
+Feito por **[Matheus Trindade](https://github.com/MatheussTrindade)** · 🗼 *vigilância contínua, alerta só quando importa*
 
 </div>

@@ -1,7 +1,7 @@
 [project]
-name = "garimpo-bot"
+name = "atalaia"
 version = "0.1.0"
-description = "Garimpo de vulnerabilidades e ameaças (CISA KEV, NVD, EPSS) com alertas priorizados no Telegram."
+description = "Vulnerability & threat intelligence alerts (CISA KEV, NVD, EPSS) priorizados por risco no Telegram."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Matheus Trindade" }]
